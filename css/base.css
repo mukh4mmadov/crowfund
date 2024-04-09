@@ -1,0 +1,481 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--main-font);
+}
+
+/* normalize css problem fixed */
+h1 {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px; /* it depends on you project */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+main {
+  flex-grow: 1;
+  background-color: var(--main-bg-color);
+}
+
+/* HEADER STYLES START */
+
+.header {
+  background-image: url("../images/image-hero-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.header__container {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+}
+/* .sitelogo {
+}
+.sitelogo__img {
+}
+.sitenav {
+} */
+.sitenav__list {
+  display: flex;
+  gap: 3.2rem;
+}
+/* .sitenav__item {
+} */
+.sitenav__link {
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.header__btn {
+  background-color: transparent;
+  border: 0;
+  display: none;
+}
+/* .header__btn_img {
+} */
+
+/* HEADER STYLES END */
+
+/* HERO SECTION STYLES START */
+
+.main-section {
+  max-width: 730px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--white-color);
+  padding: 4.8rem;
+  margin-bottom: 2.4rem;
+  border-radius: 0.8rem;
+  -webkit-box-shadow: 8px 2px 56px -31px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 8px 2px 56px -31px rgba(0, 0, 0, 0.75);
+  box-shadow: 8px 2px 56px -31px rgba(0, 0, 0, 0.75);
+}
+
+.hero {
+  margin-top: -9.2rem;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__img {
+  margin-top: -7.5rem;
+  margin-bottom: 2.8rem;
+}
+.hero__texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.hero__title {
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 1.222em;
+  text-align: center;
+  color: var(--black-color);
+  margin-bottom: 1.5rem;
+}
+.hero__description {
+  font-size: 1.6rem;
+  line-height: 1.22em;
+  text-align: center;
+  color: var(--text-color);
+}
+.hero__btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25.6rem;
+}
+.btn__back {
+  padding: 1.8rem 4rem;
+  background-color: var(--primary-color);
+  border-radius: 2.5rem;
+  border: none;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.22em;
+  color: var(--white-color);
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    background-color: var(--active-color);
+  }
+}
+.btn__book_link {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  background-color: rgba(47, 47, 47, 0.05);
+  border-radius: 3rem;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+/* .btn__book {
+} */
+.btn__book_text {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.22em;
+  color: var(--text-color);
+  padding-right: 2.4rem;
+}
+
+/* HERO SECTION STYLES END */
+
+/* CALCULATOR SECTION START */
+
+/* .calculator {
+}
+.calculator__container {
+}
+.main-section {
+} */
+.calculator__wrapper {
+  display: flex;
+  gap: 4.2rem;
+}
+.calculator__texts {
+  margin-bottom: 3.7rem;
+}
+.calculator__number {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 1.22em;
+  color: var(--black-color);
+  margin-bottom: 0.8rem;
+}
+.calculator__said {
+  font-size: 1.5rem;
+  line-height: 1.22em;
+  color: var(--text-color);
+}
+/* .rectangle__between {
+} */
+.calculator__rectangle {
+  position: absolute;
+}
+.calculator__rectangle2 {
+  position: relative;
+}
+
+/* CALCULATOR SECTION END */
+
+/* ABOUT SECTION STYLES START */
+
+/* .about {
+}
+.calculator__container {
+}
+.main-section {
+} */
+.about__title {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.22em;
+  text-align: center;
+  color: var(--black-color);
+  margin-bottom: 3.5rem;
+}
+.about__description {
+  font-size: 1.6rem;
+  line-height: 1.875em;
+  color: var(--text-color);
+  margin-bottom: 4rem;
+}
+.about__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+.about__item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #00000026;
+  padding-top: 3.8rem;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+  padding-bottom: 3.2rem;
+  border-radius: 0.8rem;
+  gap: 2.4rem;
+  -webkit-box-shadow: 8px 2px 56px -31px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 8px 2px 56px -31px rgba(0, 0, 0, 0.75);
+  box-shadow: 8px 2px 56px -31px rgba(0, 0, 0, 0.75);
+}
+.about ul li:nth-child(3) {
+  opacity: 0.5;
+}
+.about__wrappers {
+  display: flex;
+  justify-content: space-between;
+}
+.about__list_title {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 1.22em;
+  color: var(--black-color);
+}
+.about__list_price {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.22em;
+  color: var(--primary-color);
+}
+.about__list_description {
+  font-size: 1.6rem;
+  line-height: 1.875em;
+  color: var(--text-color);
+}
+.about__list_number {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.about__list_number_title {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 1.22em;
+  color: var(--black-color);
+}
+.about__list_number_text {
+  font-size: 1.5rem;
+  line-height: 1.22em;
+  color: var(--text-color);
+}
+.about_btns {
+  border: none;
+  padding: 1.5rem 3.2rem;
+  border-radius: 2.5rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.22em;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    background-color: var(--active-color);
+  }
+}
+.about_btns_disabled {
+  border: none;
+  padding: 1.5rem 3.2rem;
+  border-radius: 2.5rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.22em;
+  color: var(--white-color);
+  background-color: #2f2f2f;
+  opacity: 0.5;
+}
+
+/* ABOUT SECTION STYLES END */
+
+/* RESPONSIVE DESIGN */
+
+/* BREAKPOINTS */
+
+@media (max-width: 475px) {
+  .container {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+
+  .header__container {
+    padding-top: 3.2rem;
+  }
+
+  .header {
+    background-image: url("../images/image-hero-mobile.jpg");
+    height: 300px;
+  }
+
+  .sitenav {
+    display: none;
+  }
+
+  .header__btn {
+    display: block;
+  }
+  /* .sitenav__inner {
+  }
+  .sitenav__list_inner {
+    width: 375px;
+    position: absolute;
+    border: 1px solid #0000000d;
+    border-radius: 0.5rem;
+    background-color: var(--white-color);
+    visibility: hidden;
+    opacity: 0;
+  }
+  .sitenav__item_inner {
+    padding: 2.4rem;
+  }
+  .sitenav__link_inner {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.22em;
+    color: var(--black-color);
+  } */
+  /* HEADER END */
+
+  /* HERO START */
+
+  .hero {
+    margin-top: -5.5rem;
+  }
+  .main-section {
+    padding: 3.2rem 2.4rem;
+    width: 327px;
+  }
+  .hero__img {
+    margin-top: -3rem;
+  }
+  .hero__btns {
+    gap: 0.9rem;
+  }
+  .btn__back {
+    width: 214px;
+  }
+  .btn__book_text {
+    display: none;
+  }
+
+  /* HERO END */
+
+  /* CALCULATOR START */
+
+  .calculator__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+    margin-bottom: 3.2rem;
+  }
+  .calculator__texts {
+    margin-bottom: 0;
+  }
+  .calculator__number {
+    text-align: center;
+  }
+  .calculator__said {
+    text-align: center;
+  }
+  .rectangle__between {
+    display: none;
+  }
+  .calculator__rectangle {
+    width: 218.27px;
+    border-radius: 0.9rem;
+    margin-left: 2rem;
+  }
+  .calculator__rectangle2 {
+    width: 279px;
+    border-radius: 0.9rem;
+    margin-left: 2rem;
+  }
+
+  /* CALCULATOR END */
+
+  /* ABOUT START */
+
+  .about__description {
+    font-size: 1.4rem;
+    line-height: 1.7em;
+  }
+  .about__wrappers {
+    display: flex;
+    flex-direction: column;
+  }
+  .about__list_title {
+    margin-bottom: 0.8rem;
+  }
+  .about__list_number {
+    margin-bottom: 2.4rem;
+  }
+  .about_btns {
+    width: 157px;
+  }
+  .about_btns_disabled {
+    width: 157px;
+  }
+
+  /* ABOUT END */
+}
